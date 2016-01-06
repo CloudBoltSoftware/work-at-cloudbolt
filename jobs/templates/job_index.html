@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %}List of Job Postings{% endblock %}
+
+{% block content %}
+  <table>
+    <tr>
+      <th>Location</th>
+      <th>Job Title</th>
+      <th>Description (snippet)</th>
+      <th>Posted On</th>
+    </tr>
+  {% for job in jobs %}
+    <tr>
+      <td>{{ job.location }}</td>
+      <td>{{ job.title }}</td>
+      <td>{{ job.description }}</td>
+      <td>{{ job.posted }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+{% endblock %}
+

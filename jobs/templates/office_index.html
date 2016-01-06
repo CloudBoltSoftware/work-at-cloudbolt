@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title %}List of Offices{% endblock %}
+
+{% block content %}
+  <table>
+    <tr>
+      <th>Location</th>
+    </tr>
+  {% for office in offices %}
+    <tr>
+      <td>{{ office.name }}</td>
+    </tr>
+  {% endfor %}
+  </table>
+{% endblock %}
+

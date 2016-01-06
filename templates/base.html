@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+  <head>
+    <title>
+      {% if pagetitle %}
+          {{ pagetitle }}
+      {% else %}
+          {% block title %}{% endblock %}
+      {% endif %}
+      - CloudBolt Careers
+    </title>
+
+    {% block extrastyle %}
+    {% endblock %}
+  </head>
+  <body>
+    <div id="header">
+      <h1>CloudBolt Careers</h1>
+    </div>
+    <div id="content">
+      {% block content %}
+      {% endblock content %}
+    </div>
+    <div id="footer">
+      Copyright &copy; 2015 CloudBolt Software
+    </div>
+  </body>
+</html>
