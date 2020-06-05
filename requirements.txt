@@ -1,4 +1,4 @@
-Django==1.11.25
+Django==1.11.29
 django-extensions==1.6.1
 six==1.10.0
 wheel==0.24.0
